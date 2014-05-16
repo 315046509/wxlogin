@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>登陆</title>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "jquery.validate", "data-turbolinks-track" => true %>
+  <script src="/javascripts/jquery-migrate-1.1.1.js" type="text/javascript"></script>
+  <link href="/stylesheets/global.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/clear.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/child.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/boxy.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/cpnew.css" rel="stylesheet" type="text/css">
+  <script src="/javascripts/jquery.boxy.cn.js" type="text/javascript"></script>
+  <%= csrf_meta_tags %>
+  <script>
+      <%if flash[:alert]%>
+      alert('<%=flash[:alert]%>');
+      <%end%>
+  </script>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

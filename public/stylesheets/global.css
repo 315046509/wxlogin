@@ -1,0 +1,97 @@
+/* default
+设置默认样式
+************************************/
+body, .layout_grid_horizontal dl, .layout_grid_horizontal dt, .layout_grid_horizontal dd, .layout_grid_horizontal ul, .layout_grid_horizontal ol, .layout_grid_horizontal li, .layout_grid_horizontal h1, .layout_grid_horizontal h2, .layout_grid_horizontal h3, .layout_grid_horizontal h4, .layout_grid_horizontal h5, .layout_grid_horizontal h6, .layout_grid_horizontal pre, .layout_grid_horizontal form, .layout_grid_horizontal fieldset, .layout_grid_horizontal input, .layout_grid_horizontal p, .layout_grid_horizontal blockquote, .layout_grid_horizontal th, .layout_grid_horizontal td{
+	margin: 0;
+	padding: 0;
+}
+
+.layout_grid_horizontal h1,.layout_grid_horizontal h2,.layout_grid_horizontal h3,.layout_grid_horizontal h4,.layout_grid_horizontal h5,.layout_grid_horizontal h6{
+	font-size: 100%;
+}
+
+.layout_grid_horizontal ol,.layout_grid_horizontal ul{
+	list-style: none;
+}
+
+.layout_grid_horizontal address,.layout_grid_horizontal caption,.layout_grid_horizontal cite,.layout_grid_horizontal code,.layout_grid_horizontal dfn,.layout_grid_horizontal em,.layout_grid_horizontal strong,.layout_grid_horizontal th,.layout_grid_horizontal var{
+	font-style: normal;
+	font-weight: normal;
+}
+
+.layout_grid_horizontal table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.layout_grid_horizontal fieldset,.layout_grid_horizontal img,.layout_grid_horizontal a img{
+	border: 0;
+}
+
+.layout_grid_horizontal caption,.layout_grid_horizontal th{
+	text-align: left;
+}
+
+q:before, q:after{
+	content: '';
+}
+
+.layout_grid_horizontal a{
+    text-decoration: none;
+}
+.layout_grid_horizontal a:hover{
+    text-decoration: none;
+}
+
+/* global
+设置全局样式
+************************************/
+.layout_grid_horizontal{
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.content{
+    width: 750px;
+    float: left;
+    border-right: solid 10px #fff;
+}
+.sidebar{
+    width: 228px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+body{
+	font-size: 12px;
+	font-family: Arial, Verdana, serif;
+}
+
+.layout_grid_horizontal input,.layout_grid_horizontal select,.layout_grid_horizontal textarea{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    background: #fff;
+    color: #666;
+}
+
+.layout_grid_horizontal a{
+    color: #666;
+}
+.layout_grid_horizontal a:hover{
+    color: #ff237a;
+}
+
+
+del{
+    font-family: Impact,sans-serif; 
+}
+
+
+/* fuck jia this */
+#JIATHISSWF {display: none; }

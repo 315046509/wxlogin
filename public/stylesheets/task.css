@@ -1,0 +1,119 @@
+/* CSS Document */
+.a_task_title{background-position:6px -1419px}
+#a_a_left_nave span.l11{background-position:10px -708px}
+.a_task_nav{background:#ffe6f5; height:28px; border-bottom:2px solid #ffbee7; padding-left:13px; width:768px; margin:10px auto 20px auto; position:relative}
+  .a_task_nav a,.a_task_nav a:visited{margin:0 3px 0 0;height:16px;padding:0 10px; border:1px solid #ffbee7; padding-top:6px;border-bottom:2px solid #ffbee7;color:#1d1d1d; text-align:center; position: relative; top:5px; float:left}
+  .a_task_nav a:hover,.a_task_nav a.now,.a_task_nav a.now:visited{background:#fff; height:18px;border-bottom:0; color:#f09}
+  .a_task_nav a.how,.a_task_nav a.how:visited{background:url(../images/wowoj_ico2.gif) 0 -1571px no-repeat; position:absolute; right:15px; top:8px; border:0; padding:0 0 0 15px; text-decoration:underline; color:#545454}
+  .a_task_nav a.how:hover{background:url(../images/wowoj_ico2.gif) 0 -1571px no-repeat;color:#f09}
+
+  h1.a_task_title{background:#ffe6f5; height:26px;padding-left:23px; width:758px; margin:0 auto; line-height:26px; color:#f09; font-size:12px}
+.a_task_statistics{padding-left:23px; width:758px; margin:0 auto; line-height:42px}
+  .a_task_statistics span{color:#ff3c00; font-family:Arial, Helvetica, sans-serif; font-size:18px; padding-right:15px}
+.a_task_category{background:url(../images/task.gif) no-repeat 550px 11px;padding:10px 0 0 23px; width:758px; margin:0 auto;line-height:24px}
+  .a_task_category span{color:#f09}
+  .a_task_category a,.a_task_category a:visited,.a_task_text a,.a_task_text a:visited{color:#ff7dd0; text-decoration:underline}
+.a_task_text{border-top:1px dashed #c1c1c1;padding:8px 0 0 74px; width:707px; margin:0 auto; position:relative; line-height:24px; margin-top:8px}
+  .a_task_text img{position:absolute; top:12px; left:23px}
+  .a_task_text strong{display:block}
+  .a_task_text a.normal,.a_task_text a.normal:visited{color:#545454; text-decoration:none}
+  .a_task_text a.normal:hover{color:#f09; text-decoration:underline}
+  .a_task_text span{color:#f09; font-weight:bold}
+  .a_task_text cite{color:#ff3c00; font-weight:bold; font-style:normal}
+
+.a_mytask{}
+  .a_mytask li{width:221px; border:1px solid #c1c1c1; height:48px; position:relative; background:#fffef5; margin-bottom:10px}
+  .a_mytask li.a_mytask_bg{background:#f4fcff}
+  .a_mytask li cite{display:block; width:35px; height:35px; background:url(../images/wowoj_bg5.gif) 0 0; position:absolute; left:7px; top:7px}
+  .a_mytask li cite.a_mytask_l1{background-position:0 -814px}
+  .a_mytask li cite.a_mytask_l2{background-position:-35px -814px}
+  .a_mytask li cite.a_mytask_l3{background-position:-70px -814px}
+  .a_mytask li cite.a_mytask_l4{background-position:-105px -814px; width:37px; height:36px; left:5px; top:6px}
+  .a_mytask li cite.a_mytask_l5{background-position:-142px -814px; height:40px; top:3px}
+  .a_mytask li p{padding:4px 0 0 49px; line-height:20px; width:166px;}
+  .a_mytask li p strong{color:#f09; font-family:Arial, Helvetica, sans-serif;padding:0 5px}
+  .a_mytask li a,.a_mytask li a:visited{display:block; background:url(../images/wowoj_bg5.gif) -92px -788px no-repeat; width:42px; height:13px; color:#fff; padding-left:2px;*padding-top:1px; position:absolute; left:167px; top:28px}
+
+
+
+
+
+.a_task_subpage{width:703px; margin:0 auto 20px auto}
+  .a_task_unfinleft{float:left;margin-right:-1px;position:relative; padding-top:15px}
+    .a_task_unfinleft .a_task_list{height:94px; width:460px; border-bottom:1px dashed #c2c2c2; position:relative}
+    .a_task_unfinleft .now{background:#fffbe8;width:459px;border:1px solid #cdcdcd;border-right:0;}
+    .a_task_unfinleft .noborder{border-bottom:0; height:95px}
+    .a_task_unfinleft .a_task_list img{width:141px; height:64px; border:2px solid #000; display:block;margin:13px 0 0 13px;position:absolute}
+    .a_task_unfinleft .a_task_list p{line-height:24px; position:absolute; left:169px; top:25px; padding-right:10px}
+    .a_task_unfinleft .a_task_list p strong{display:block}
+		.a_task_unfinleft .a_task_list p span{color:red;}
+    .a_task_unfinleft .a_task_list p a{color:#f09}
+  .a_task_unfinright{background:#fffbe8;float:left; width:242px; height:394px; border:1px solid #cdcdcd}
+    .a_task_unfinright img{width:221px; height:79px; border:2px solid #000; display:block;margin:19px 0 0 9px}
+    .a_task_unfinright p{line-height:22px;margin:15px 15px 10px 15px; color:#000}
+    .a_task_unfinright p span{color:#f00; font-weight:bold}
+    .a_task_unfinright p cite{background:url(../images/wowoj_ico2.gif) 0 -1512px; padding-left:15px; font-style:normal}
+    .a_task_unfinright input{background:url(../images/wowoj_bg4.gif) -25px -77px; border:0; color:#f09; width:97px; height:23px; font-size:12px; line-height:23px; cursor:pointer; margin-left:15px}
+    .a_task_unfinright .a_task_help{width:188px;padding:10px; line-height:21px; border:1px solid #fec0d9;margin:15px}
+    .a_task_unfinright .a_task_help span{color:#f09; display:block}
+.a_task_award{width:673px; margin:0 auto; border:1px solid #d0d0d0; height:59px; padding-left:28px; line-height:59px;position:relative}
+.a_task_ranking{background:#fffced; border-bottom:0; }
+  .a_task_award span{color:#ff3c00; font-size:18px; font-family:Arial, Helvetica, sans-serif; padding-right:30px}
+  .a_task_award img.a_task_gold{position:absolute; top:14px;left:93px;}
+  .a_task_award img.a_task_silver{position:absolute; top:14px;left:93px;left:158px;_left:168px}
+  .a_task_award img.a_task_copper{position:absolute; top:14px;left:93px;left:223px;_left:233px}
+  .a_task_award cite{color:#ff3c00; font-style:normal;padding-left:47px; font-family:Arial, Helvetica, sans-serif}
+  .a_task_award cite strong{font-size:18px; font-weight:normal}
+  .a_task_award strong{color:#ff3c00; font-size:18px}
+
+  .a_task_comptext{float:left; width:341px}
+    .a_task_comptext .a_task_complist{height:87px; position:relative; border-bottom:1px dashed #c2c2c2; padding-left:5px}
+    .a_task_comptext .a_task_complist dfn{background:url(../images/wowoj_bg4.gif) no-repeat; display:block;width:67px; height:69px; position:absolute;top:10px}
+    .a_task_comptext .a_task_complist dfn.l1{background-position:0 -151px; }
+    .a_task_comptext .a_task_complist dfn.l2{background-position:-67px -151px; }
+    .a_task_comptext .a_task_complist dfn.l3{background-position:0 -220px; }
+    .a_task_comptext .a_task_complist dfn.l4{background-position:-67px -220px; }
+    .a_task_comptext .a_task_complist dfn.l5{background-position:0 -289px; }
+    .a_task_comptext .a_task_complist dfn.l6{background-position:-67px -289px; }
+    .a_task_comptext .a_task_complist dfn.l7{background-position:0 -358px; }
+    .a_task_comptext .a_task_complist dfn.l8{background-position:-67px -358px; }
+    .a_task_comptext .a_task_complist p{padding:25px 0 0 80px; line-height:20px}
+    .a_task_comptext .a_task_complist p strong{display:block}
+    .a_task_comptext .a_task_complist p span{color:#f09}
+  .a_task_compline{float:left; width:1px; background:url(../images/wowoj_bg4.gif) -176px 0; height:350px;margin:0 10px}
+
+  .a_task_topusers{height:87px; border-bottom:1px dashed #c3c3c3; position:relative; font-size:14px}
+    .a_task_topusers strong{display:block; width:65px; text-align:center; line-height:87px}
+    .a_task_topusers img.users{display:block;width:60px; height:60px; padding:2px; border:1px solid #ccc; position:absolute; left:75px; top:10px}
+    .a_task_topusers p{line-height:22px;position:absolute; left:165px; top:20px}
+    .a_task_topusers p a{color:#f09}
+    .a_task_topusers span{display:block;text-align:center;line-height:87px; position:absolute; left:480px; top:0; text-align:left}
+    .a_task_topusers span a,.a_task_topusers span a:visited{color:#ff2626}
+    .a_task_topusers dfn{background:url(../images/wowoj_ico2.gif);display:block; width:37px; height:37px; position:absolute; top:24px; right:20px}
+    .a_task_topusers img.a_task_gold,.a_task_topusers img.a_task_silver,.a_task_topusers img.a_task_copper{display:block; width:37px; height:37px; position:absolute; top:24px; right:20px}
+  .a_task_topusersranking{background:#fffced; text-align:center}
+  .a_task_topusersranking span cite{font-size:12px; font-style:normal; padding-left:5px}
+
+.a_task_how{width:781px; margin:0 auto;line-height:22px}
+  .a_task_how h1{font-size:14px; color:#f09;padding:10px 13px 5px 13px}
+  .a_task_how p{text-indent:2em; border-bottom:1px dashed #c1c1c1;padding:0 13px 10px 13px}
+  .a_task_how p.noborder{border-bottom:0;padding:0 13px}
+
+.a_task_specialtitle{height:27px}
+  .a_task_specialtitle a,.a_task_specialtitle a:visited{width:80px;height:27px;border:1px solid #c1c1c1; background:#fffced; color:#1d1d1d;line-height:27px; text-align:center; float:left; margin-right:2px}
+  .a_task_specialtitle a:hover,.a_task_specialtitle a.now,.a_task_specialtitle a.now:visited{background:#fff; font-weight:bold}
+.a_task_specialtext{border:1px solid #c1c1c1;padding:0 20px;margin-top:10px}
+  .a_task_specialtext h1{font-size:12px; color:#545454; padding:20px 0 15px 0}
+  .a_task_specialtext .a_task_specialaward{line-height:37px; border-bottom:1px dashed #c3c3c3;position:relative;padding:0 5px}
+  .a_task_specialtext .a_task_specialaward strong{font-size:18px; color:#ff3c00; padding-right:15px}
+  .a_task_specialtext .a_task_specialaward span{font-size:12px; color:#ff3c00; padding-right:15px}
+  .a_task_specialtext .a_task_specialaward cite{font-size:18px;color:#ff3c00; font-style:normal; font-family:Arial, Helvetica, sans-serif; padding-right:5px}
+  .a_task_specialtext .a_task_specialaward dfn{position:relative;font-style:normal; padding-right:47px}
+  .a_task_specialtext .a_task_specialaward dfn img{position:absolute;top:-15px;*top:-8px}
+  .a_task_specialtext p{padding:5px 5px; line-height:21px}
+  .a_task_specialtext p strong{font-weight:bold; display:block}
+  .a_task_specialtext input{background:url(../images/wowoj_bg4.gif) -25px -123px; width:67px; height:23px; border:0; color:#f09; font-size:12px; margin:0 0 10px 5px; cursor:pointer}
+
+
+
+

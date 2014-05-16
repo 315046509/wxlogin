@@ -1,0 +1,272 @@
+body{
+	font-size:12px;
+	line-height:1.5em;
+	background:#30b2ca;
+    font-family:SimSun, Arial, serif, ;
+    color: #666565;
+    text-align: center;
+}
+.quiz_main_box{
+	width:876px;
+	height:602px;
+	margin:73px auto 0 auto;
+	background:url(../images/mainbg.gif) left top no-repeat;
+	padding:0 45px 0 39px;
+}
+a, a:visited{
+    color: #9b9b9a;
+    text-decoration: none;
+}
+a:hover{
+    color: #b53104;
+    text-decoration: none;
+}
+
+.sinupFormBox{
+    padding-top:13px;
+}
+.sinupFormBox p{
+    padding:7px 0;
+    overflow:hidden;
+    text-align:left;
+	width:100%;
+	clear:both;
+}
+.sinupFormBox p label{
+    text-align: left;
+    float: left;
+    padding-right: 10px;
+    font-size:14px;
+	color:#834529;
+}
+.sinupFormBox p span{
+    display:block;
+    width: 70px;
+    text-align: left;
+    font-size:14px;
+    margin-right:10px;
+    text-align:left;
+    padding:0 0 5px 0;
+    color:#432213;
+    float:left;
+	white-space: pre;
+	font-family: 'Courier New';
+}
+.sinupFormBox p input, .loginFormBox p input {
+    width: 183px;
+    height: 16px;
+    background:#ebebeb;
+    border:1px #d6d5d5 solid;
+    outline:none;
+    padding:2px 1px;
+    color:#666;
+    float:left;
+}
+.sinupFormBox p input.error, .loginFormBox p input.error{
+    border:1px #ECB6AF solid;
+}
+.sinupFormBox p input.yz-input {
+    width: 100px;
+}
+.sinupFormBox p img{
+    float:left;
+    padding-left:10px;
+}
+.sinupFormBox p textarea {
+    height: 93px;
+    width: 463px;
+    background:#dfbd8a;
+    border:1px #785e27 solid;
+}
+.sinupFormBox p label.error, .loginFormBox p label.error{
+    color:#834529;
+    padding:0 0 0 25px;
+    float:left;
+    text-align:left;
+    font-size:12px;
+	background:url(../images/errorico.gif) 10px center no-repeat;
+}
+.sinupFormBox p label.error.sign_up_info{
+	background: none;
+    padding:0 0 0 15px;
+}
+.sinupFormBox input.btn-signup{
+    display: block;
+    width:141px;
+    height:33px;
+    background: url(../images/quizs/sign_button.gif) left top no-repeat;
+    cursor:pointer;
+    border:0;
+    margin:5px auto 0 222px;
+	_float:none;
+}
+
+.quiz_titles a, .quiz_titles a:visited{
+	color:#cb0f02;
+	text-decoration:underline;
+}
+
+.loginFormBox{
+    padding-left:85px;
+    padding-top:30px;
+}
+.loginFormBox p{
+    padding:17px 0;
+    overflow:hidden;
+    text-align:left;
+	width:100%;
+	clear:both;
+}
+.loginFormBox p span{
+    display:block;
+    width: 56px;
+    text-align: right;
+    font-size:14px;
+    margin-right:10px;
+    display:block;
+    text-align:left;
+    padding:0 0 5px 0;
+    color:#432213;
+    float:left;
+}
+.loginFormBox p textarea {
+    height: 93px;
+    width: 463px;
+    background:#dfbd8a;
+    border:1px #785e27 solid;
+}
+.loginFormBox p label{
+    color:#432213;
+    padding:0 0 0 25px;
+    float:left;
+}
+.loginFormBox input.nfyy-login-submit{
+    display: block;
+    width:141px;
+    height:33px;
+    background:url(../images/quizs/login_button.gif) left top no-repeat;
+    cursor:pointer;
+    border:0;
+	_float:none;
+    margin:0 auto 0 64px;
+}
+
+.quiz_addbaby_box{
+	text-align:left;
+	padding-top:15px;
+	position:relative;
+}
+.quiz_addbaby_box p{
+    padding:10px 0;
+    overflow:hidden;
+    text-align:left;
+	font-size:14px;
+}
+.quiz_addbaby_box p input {
+    width: 183px;
+    height: 16px;
+    background:#ebebeb;
+    border:1px #d6d5d5 solid;
+    outline:none;
+    padding:2px 1px;
+    color:#666;
+}
+.addbabySubmit{
+    display: block;
+    width:140px;
+    height:33px;
+    background:url(../images/quizs/change_info.gif) left top no-repeat;
+    cursor:pointer;
+    border:0;
+	position:absolute;
+	right: 78px;
+	top: 46px;
+}
+.quiz_baby_list{
+	width: 583px;
+	padding-left: 52px;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+}
+.babyListTable{
+	padding:20px 0 35px 0;
+}
+.babytable{
+	width: 100%;
+}
+.babytable th{
+	color:#d96615;
+}
+.babytable th, .babytable td{
+	padding: 8px;
+	line-height: 18px;
+	text-align: left;
+	vertical-align: top;
+	font-weight:bold;
+	letter-spacing:1px;
+	text-align:center;
+}
+
+.addbabySubmitdown{
+    display: block;
+    width:140px;
+    height:33px;
+    background:url(../images/quizs/change.gif) left top no-repeat;
+    cursor:pointer;
+    border:0;
+	position:absolute;
+	right: 78px;
+	top: 46px;
+}
+.qustBoxyCont{
+	overflow:hidden;
+}
+.qustBoxyContButton{
+	padding:10px 0 0 151px;
+	text-align:left;
+}
+.qustBoxyCont a{
+	margin-right:15px;
+	height:24px;
+	line-height:24px;
+	overflow:hidden;
+}
+.qustBoxyCont a.goToqustion{
+	float:left;
+	display:block;
+	width:106px;
+	height:24px;
+	background:url(../images/quizs/boxy_button_bg.gif) left top no-repeat;
+	color:#fff;
+	text-shadow:1px 1px 2px #333333;
+	font-weight:bold;
+	text-align:center;
+	padding:0;
+	overflow:hidden;
+}
+
+.quiz_result{
+	text-align:left;
+	width:550px;
+	margin:0 auto;
+	padding:0 70px 25px 95px;
+}
+.quiz_result h3{
+	font-size:14px;
+	font-weight:bold;
+	color:#d03016;
+	padding-bottom:10px;
+}
+.quiz_result p{
+	line-height:24px;
+	text-indent:2em;
+	letter-spacing:1px;
+}
+.quiz_result p span{
+	color:#d03016;
+}
+.resultUnderLine{
+	padding-bottom:10px;
+	border-bottom:1px solid #f1cf7b;
+}

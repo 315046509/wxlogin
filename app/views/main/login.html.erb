@@ -1,0 +1,84 @@
+<% if @member_curr %>
+    <div class="quiz_main_box">
+      <div id="quiz"><!-- 宝宝测试 -->
+        <div id="quiz_signup_head">
+          <h2>早教评测:测试可以帮助您更了解您的宝宝，并及时端正宝宝的行为习惯。我们将根据测试结果向您提供准确专业的点评。</h2>
+        </div>
+        <div id="quiz_signup_body">
+          <div class="loginFormBox">
+            <p class="quiz_titles" style="background:none; letter-spacing:2px; padding-top:20px">
+              尊敬的用户：<%= @member_curr.user %>欢迎您！
+              <a href="<%= logout_path %>">[注销]</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+<% else %>
+    <div class="quiz_main_box">
+      <div id="quiz"><!-- 宝宝测试 -->
+        <div id="quiz_signup_head">
+          <h2>早教评测:测试可以帮助您更了解您的宝宝，并及时端正宝宝的行为习惯。我们将根据测试结果向您提供准确专业的点评。</h2>
+        </div>
+        <div id="quiz_signup_body">
+          <p class="quiz_titles" style="background:none; letter-spacing:2px; padding-top:20px">用户登录 | 新用户请先<a href="/signup">注册</a>后登录</p>
+          <div class="loginFormBox">
+            <form id="login_form">
+              <p>
+                <span>用户名：</span>
+                <input class="nfyy-big-input" name="name" type="text" />
+              </p>
+              <p>
+                <span>密&nbsp;&nbsp;码：</span>
+                <input class="nfyy-big-input" name="password" type="password" />
+              </p>
+              <p/>
+              <input class="nfyy-login-submit" name="commit" type="submit" value="" />
+              <p/>
+              <script type="text/javascript">
+                  $("#login_form").validate({
+                      rules: {
+                          "name": {
+                              required: true
+                          },
+                          "password": {
+                              required: true
+                          }
+                      },
+                      messages: {
+                          'name': {
+                              required: '用户名不能为空'
+                          },
+                          "password": {
+                              required: '密码不能为空'
+                          }
+                      },
+                      errorPlacement: function(error, element) {
+                          error.appendTo(element.parent());
+                      },
+                      submitHandler: function(form) {  //通过之后回调
+                          var param = $("#login_form").serialize();
+                          $.ajax({
+                              url : "<%= login_check_main_index_path %>",
+                              type : "post",
+                              dataType : "json",
+                              data: param,
+                              success : function(data) {
+                                  var award = eval (data);
+                                  if (award.success == 0){
+                                      alert("登录成功");
+                                      location.href ="<%=root_path%>"
+                                  }
+                                  if (award.success == 1){
+                                      alert("用户名或密码错误");
+                                  }
+                              }
+                          });
+                      }
+                  });
+              </script>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+<%end%>

@@ -1,0 +1,188 @@
+<script>
+    <% if flash[:error_msg]%>
+    alert('<%=flash[:error_msg]%>');
+    <% end%>
+</script>
+<div class="quiz_main_box">
+  <div id="quiz">
+    <div id="quiz_signup_head">
+    </div>
+    <div id="quiz_signup_body">
+      <p class="quiz_titles" style="background-position:66px 13px;">用户注册</p>
+
+      <div class="sinupFormBox">
+        <%= form_for(@member, :url => user_create_main_index_path, :method => "post", :html => {:id => "user_signup"}) do |f| %>
+            <form id="user_signup">
+              <p>
+                <span>用&nbsp;户&nbsp;名:</span>
+                <input class="big-input" name="member[user]" size="30" type="text"/>
+                <label class="error sign_up_info">6-20位字符，可使用字母、数字或符号的组合</label>
+              </p>
+
+              <p>
+                <span>密&nbsp;&nbsp;&nbsp;&nbsp;码:</span>
+                <input class="big-input" id="member_password" name="member[password]" size="30" type="password"/>
+                <label class="error sign_up_info">6-20位字符，可使用字母、数字或符号的组合</label>
+              </p>
+
+              <p>
+                <span>确认密码:</span>
+                <input class="big-input" id="member_passagain" name="member_passagain" size="30" type="password"/>
+              </p>
+
+              <p>
+                <span>真实姓名:</span>
+                <input class="big-input" name="member[realname]" size="30" type="text"/>
+                <label class="error sign_up_info">支持中文，最多20个字符，中文算2个字符</label>
+              </p>
+
+              <p>
+                <span>手&nbsp;&nbsp;&nbsp;&nbsp;机:</span>
+                <input class="big-input" name="member[tel]" size="30" type="text"/>
+                <label class="error sign_up_info">请输入您的手机号码</label>
+              </p>
+
+              <p>
+                <span>地&nbsp;&nbsp;&nbsp;&nbsp;址:</span>
+                <input class="big-input" name="member[address]" size="30" type="text"/>
+                <label class="error sign_up_info">请输入您的联系地址</label>
+              </p>
+
+              <% if request.post? %>
+                      <p><%= valid_captcha?(params[:captcha]) ? 'valid' : 'invalid' %> captcha</p>
+              <% end %>
+              <p>
+                <span>验&nbsp;证&nbsp;码:</span>
+                <input class="big-input" name="member[captcha]" size="30" type="text"/>
+                <%= captcha_tag %>
+              </p>
+
+              <p>
+                <strong style="color:#cd210a; font-weight:bold;">特别提示：</strong>为了保证用户安全以及忘记用户名、密码等特殊情况，
+                <strong style="color:#cd210a;">请务必正确填写信息。</strong>
+              </p>
+
+              <p class="sign-bfld">
+                <input class="btn-signup backgroundTrans" id="member_submit" name="commit" type="submit" value=""/>
+              </p>
+            </form>
+        <% end %>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $.validator.methods.check_username = function (value, element, param) {
+                    var reg = /^(13[0-9]|15[0-9]|18[0-9])\d{8}$/i;
+                    if (reg.test(value)) {
+                        return false;
+                    }
+                    return true;
+                };
+                $.validator.methods.mobile = function (value) {
+                    var mobile = /^1[3458]\d{9}$/i;
+                    return mobile.test(value)
+                };
+
+                $("img[alt='captcha']").each(function (index, item) {
+                    item.title = '看不清？点击刷新'
+                })
+                $("img[alt='captcha']").bind("click", function () {
+                    this.src = this.src + '?'
+                });
+
+                $(function () {
+                    $("#user_signup").validate({
+                        rules: {
+                            "member[user]": {
+                                required: true,
+                                check_username: true,
+                                minlength: 6,
+                                remote: "<%=check_login_main_index_path%>"
+                            },
+                            "member[password]": {
+                                required: true,
+                                minlength: 6
+                            },
+                            "member_passagain": {
+                                required: true,
+                                minlength: 6,
+                                equalTo: "#member_password"
+                            },
+                            "member[realname]": {
+                                required: true,
+                                minlength: 2,
+                                maxlength: 20
+                            },
+                            "member[tel]": {
+                                required: true,
+                                mobile: true,
+                                rangelength: [11, 11]
+                            },
+                            "member[address]": {
+                                required: true
+                            },
+                            "member[captcha]": {
+                                required: true
+                            }
+                        },
+                        messages: {
+                            "member[user]": {
+                                required: "6-20位字符，可使用字母、数字或符号的组合",
+                                check_username: "登录名不能含特殊字符",
+                                minlength: "登录名不能少于6个字符",
+                                remote: "用户名已存在"
+                            },
+                            "member[password]": {
+                                required: "6-20位字符，可使用字母、数字或符号的组合",
+                                minlength: jQuery.format("密码不能小于6个字符")
+                            },
+                            "member_passagain": {
+                                required: "请输入确认密码",
+                                minlength: jQuery.format("不能小于6个字符"),
+                                equalTo: "两次输入密码不一致"
+                            },
+                            "member[realname]": {
+                                required: "请输入昵称",
+                                minlength: "不能少于2个字符",
+                                maxlength: "不能多于20个字符"
+                            },
+                            "member[tel]": {
+                                required: "电话不能为空！",
+                                mobile: "手机格式不正确!",
+                                rangelength: "请输入正确的手机号码！"
+                            },
+                            "member[address]": {
+                                required: "请输入地址"
+                            },
+                            "member[captcha]": {
+                                required: "请输入验证码"
+                            }
+                        },
+                        errorPlacement: function (error, element) {
+                            error.appendTo(element.parent());
+                        },
+                        submitHandler: function (form) {  //通过之后回调
+                            var param = $("#user_signup").serialize();
+                            $.ajax({
+                                url: "<%= user_create_main_index_path %>",
+                                type: 'POST',
+                                dataType: "json",
+                                data: param,
+                                success: function (data) {
+                                    var award = eval(data);
+                                    if (award.success == 0) {
+                                        alert("注册成功");
+                                        setInterval(window.location.href = award.go_url, 1000)
+                                    }
+                                    if (award.success == 1) {
+                                        alert("注册用户失败！");
+                                    }
+                                }
+                            });
+                        }
+                    });
+                });
+            });
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
